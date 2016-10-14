@@ -1,0 +1,8 @@
+import datetime
+from picamera import PiCamera
+
+camera = PiCamera()
+camera.resolution = (1024, 768)
+basepath = /home/pi/dev/temp/bot/
+filepath = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + ".jpg"
+camera.capture(basepath + filepath)
